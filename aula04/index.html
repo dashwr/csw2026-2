@@ -7,21 +7,56 @@
 </head>
 <body>
     <h1>Principais Formatações</h1>
+    <h2>Semântico vs. Não Semântico</h2>
     <br>
     <h2>Negrito / Destaque</h2>
     Aqui temos texto em <strong>negrito semântico</strong>.
-    Hoje usamos a tag strong, <b>antes era tag b.</b>
+    Hoje usamos a tag [strong], <b>antes era tag [b].</b>
     <br>
     <h2>Itálico / Ênfase</h2>
     Aqui temos texto em <em>itálico semântico.</em>
-    Hoje usamos a tag em, <i>antes era tag i.</i>
+    Hoje usamos a tag [em], <i>antes era tag [i].</i>
     <br>
     <h2>Marcado</h2>
     Aqui temos texto <mark>marcado.</mark>
-    <mark>Também temos aqui.</mark>
+    <mark style="background-color: cadetblue;">Também temos aqui,</mark> usando a tag [mark], junto de "background-color: cadetblue".
     <br>
     <h2>Big / Small</h2>
-    Antes tinhamos <big>a tag big que agora é deprecated</big>
-    Hoje só temos a tag <small>small que deixa texto pequeno.</small>
+    Antes tinhamos <big>a tag [big] que agora é deprecated</big>
+    Hoje só temos a tag <small>[small] que deixa texto pequeno.</small>
+    <br>
+    <h2>Deletado / Riscado</h2>
+    Agora temos o <del>texto deletado, que usa a tag [del];</del>
+    Porém antes tinhamos o <s>riscado, que usava a tag [S]</s>.
+    <br>
+    <h2>Inserido / Sublinhado</h2>
+    agora <ins>isso se chama inserted e usa a tag [ins];</ins>
+    Mas na forma não semântica <u>isso se chamava sublinhado e usava a tag [u]</u>.
+    <br>
+    <h2>Texto Sobrescrito</h2>
+    Estritamente semântica, <sup>essa aqui se chama texto sobrescrito e usa a tag [sup].</sup>
+    <br>
+    <h2>Texto Subscrito</h2>
+    Temos também <sub>essa tag [sub], para texto subscrito.</sub>
+    <br>
+    <h2>Trecho de Código</h2>
+    Para mostrar códigos completos, podemos usar...
+    <pre><code>
+        essa-tag{ 
+            nome='[pre] junto de [code]';
+        }
+    </pre></code> para trechos de código.
+    <br>
+    <h2>Endereço</h2>
+    Olha <address>esta tag [address]</address> para endereços.
+    <br>
+    <h2>Code</h2>
+    Mais simples que aquela anterior, podemos usar também <code>apenas a tag [code].</code> para código in-line.
+    <br>
+    <h2>Citações</h2>
+    Temos uma tag para citações; <p><cite>"Temos uma tag para citações!"</cite></p> ...e ela se chama [cite].
+    <br>
+    <h2>Abreviações</h2>
+    Ou podemos <abbr title="Realizar abreviações completas das coisas">abreviar</abbr> usando [abbr]. Só buscadores vêem tudo.
 </body>
 </html>
