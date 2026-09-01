@@ -16,5 +16,5 @@ Aula04
 - Formatação e tags de formatação, semântica e não-semântica.
 
 Aula05
-- Tabelas e mais tabelas.
+- Tabelas e listas.
 
