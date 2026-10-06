@@ -1,0 +1,14 @@
+body {
+    background-color: lightyellow;
+}
+
+h1 {
+    color: darkred;
+    margin-left: 100px;
+}
+
+p {
+    color: blue;
+    font-family: 'Courier New', monospace;
+    margin: 40px 250px;
+}
