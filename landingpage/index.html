@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home | minha landing page</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .audio {
+            display: flex; justify-content: center; padding: 24px
+        }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #30213d;
+            background-color: #faf8fc;
+        }
+
+        /* cabeçalho mais alto e arredondado */
+        .a1 {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 24px;
+            min-height: 120px;
+            margin: 18px 24px 0;
+            padding: 28px 8%;
+            background-color: #4b2673;
+            color: white;
+            border-radius: 32px;
+            box-shadow: 0 8px 20px #4b267333;
+        }
+        .b1 {
+            margin: 0;
+            font-size: 1.25rem;
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+        nav a:hover {
+            color: #e2c8ff;
+            text-decoration: underline;
+        }
+
+        /* apresentação principal */
+        main {
+            max-width: 1000px;
+            margin: 48px auto;
+            padding: 0 24px;
+        }
+
+        .apresentacao {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+            padding: 36px;
+            background-color: #eee5f7;
+            border-radius: 18px;
+            box-shadow: #4b2673 10px 10px 20px
+        }
+        .apresentacao h2 {
+            margin-top: 0;
+            color: #4b2673;
+        }
+
+
+        .foto {
+            display: grid;
+            flex: 0 0 180px;
+            min-height: 180px;
+            place-items: center;
+            border: 3px dashed #9065b5;
+            border-radius: 50%;
+            color: #65428a;
+            text-align: center;
+            height: 180px;
+        }
+        .foto img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+        }
+
+        .blocos {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 18px;
+            margin-top: 24px;
+        }
+
+        .bloco {
+            flex: 1 1 220px;
+            padding: 20px;
+            background-color: white;
+            border: 1px solid #dfd0ed;
+            border-radius: 12px;
+            box-shadow: #4b2673 10px 10px 20px
+        }
+
+        .bloco h3 {
+            margin-top: 0;
+            color: #6b3f91;
+        }
+
+        @media (max-width: 600px) {
+            .a1,
+            .apresentacao {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- !! ANOTAÇÕES -->
+
+<!-- A tag nav não faz nada além de guiar leitura da página para máquinas (Google e afins) por dizer que
+  o conteúdo da tag é apenas auxílio para navegação.-->
+<!-- Algo parecido com as tags header, section, article e main. Main é MUITO IMPORTANTE pra sinalizar o conteudo principal da página, e header também, pra sinalizar o que não é. Já section e article... section é quando o
+ conteudo faz parte da página, e article é quando o conteúdo é o "suco" da página, faz sentido fora dela. um section pode ser uma seção de um artigo, e um article pode ser um artigo de uma seção... é tudo div. é só div.-->
+
+
+    <header class="a1" id="topo">
+        <h1 class="b1">Pág. do Bruno</h1>
+        <nav aria-label="menu principal">
+            <a href="index.html">home</a>
+            <a href="curriculo.html">currículo</a>
+            <a href="github.html">github</a>
+            <a href="servicos.html">serviços</a>
+        </nav>
+    </header>
+
+    <div class="audio">
+        <audio controls loop src="./mus/wiiplay.mp3">Seu navegador não suporta áudio...</audio>
+    </div>
+
+    <main>
+        <section class="apresentacao">
+            <div class="foto">
+                <img src="./img/bruno2.jpg" alt="Foto do Bruno">
+            </div>
+            <div>
+                <h2>Olá! Sou Bruno.</h2>
+                <p>Sou Paulistano, sempre fui fascinado por computadores quando criança, sempre desmontei as coisas e fiz muitas perguntas. Fiz meu fundamental em várias escolas diferentes, e fiz meu ensino médio nas estaduais EEEFM Geraldo Costa e Francelina Carneiro. Hoje curso Ciência da Computação na UVV e trabalho numa startup.</p>
+                <p>Quero, no futuro, poder trabalhar mais com criação geral de software e machine learning.</p>
+                <p>Participo ocasionalmente de eventos da UVV, tais como o InovaWeek.</p>
+            </div>
+        </section>
+
+        <section class="blocos">
+            <article class="bloco">
+                <h3>> meus estudos</h3>
+                <p>Estudo no primeiro período na UVV, aprendendo HTML e CSS, teoria de design front-end, pensamento lógico, criação de bancos em PostgreSQL...</p>
+            </article>
+            <article class="bloco">
+                <h3>> o que eu gosto</h3>
+                <p>Já joguei muito, hoje sou mais chegado em estudar hardware, o mercado de IA e desmontar coisas ouvindo rock.</p>
+            </article>
+            <article class="bloco">
+                <h3>> meus objetivos</h3>
+                <p>Melhorar minha cognição, aprender convenções, e, no fim, aprender várias linguagens de programação.</p>
+            </article>
+        </section>
+        <section class="blocos">
+            <article class="bloco">
+                <h3>> aprenda mais sobre mim</h3>
+                <p>Saiba mais sobre o que já fiz <a href="./github.html">clicando aqui</a> para ver meus projetos, ou saiba mais sobre meu perfil <a href="./curriculo.html">clicando aqui</a> para ler meu currículo e habilidades, como HTML e CSS, nível de inglês...</p>
+                <p>Vamos conversar e ver como posso te ajudar? <a href="./contato.html">clique aqui!</a></p>
+            </article>
+        </section>
+    </main>
+</body>
+</html>

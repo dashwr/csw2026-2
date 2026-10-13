@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>github | minha landing page</title>
+    <style>
+        * { box-sizing: border-box; }
+
+        body { margin: 0; font-family: Arial, sans-serif; color: #30213d; background: #faf8fc; }
+
+        .cabecalho { display: flex; align-items: center; justify-content: space-between; gap: 24px; min-height: 120px; margin: 18px 24px 0; padding: 28px 8%; color: white; background: #4b2673; border-radius: 32px; box-shadow: 0 8px 20px #4b267333; }
+        .cabecalho h1 { margin: 0; font-size: 1.25rem; }
+
+        nav { display: flex; flex-wrap: wrap; gap: 20px; }
+        nav a { color: white; text-decoration: none; }
+        nav a:hover { color: #e2c8ff; text-decoration: underline; }
+
+        main { max-width: 900px; margin: 48px auto; padding: 0 24px; }
+
+        h2, h3 { color: #4b2673; }
+
+        .cartao { padding: 28px; background: #eee5f7; border-radius: 16px; box-shadow: #4b2673 10px 10px 20px}
+
+        .botao { display: inline-block; margin-top: 10px; padding: 12px 18px; color: white; background: #6b3f91; border-radius: 10px; text-decoration: none; }
+        .botao:hover { background: #4b2673; }
+
+        .imagem-github { display: block; width: min(100%, 500px); height: auto; margin: 20px auto; border: 2px solid #dfd0ed; border-radius: 12px; }
+
+        @media (max-width: 600px) { .cabecalho { flex-direction: column; text-align: center; } nav { justify-content: center; } }
+    </style>
+</head>
+<body>
+    <header class="cabecalho" id="topo">
+        <h1>Pág. do Bruno</h1>
+        <nav aria-label="menu principal">
+            <a href="index.html">home</a>
+            <a href="curriculo.html">currículo</a>
+            <a href="github.html">github</a>
+            <a href="servicos.html">serviços</a>
+        </nav>
+    </header>
+    <main>
+        <h2>> meus projetos no github</h2>
+        <section class="cartao">
+
+            <h3>> conheça meu perfil</h3>
+
+            <p>Clique aqui para visitar meu Github.</p>
+
+            <a class="botao" href="https://github.com/dashwr" target="_blank">dashwr - Github
+            </a>
+
+            <p>Esse é meu maior projeto pessoal atual, <i>Aerographene</i> - o navegador que é mais rápido que o seu navegador atual. Clique na foto para saber mais.</p>
+
+            <a href="https://github.com/newcortexbr/aerographene/tree/main" target="_blank">
+                <img class="imagem-github" src="./img/aerographene.webp" alt="Tela do meu navegador">
+            </a>
+
+            <p class="dica">Ele foi criado inteiramente por mim com ajuda de IA - para tirar minhas sugestões, processos e ideias do papel - com base em projetos que escolhi a dedo, tal como ungoogled-chromium como base absoluta, Helium como fonte de alguns patches e Thorium como guia.</p>
+
+            <p class="dica">Além dele, tenho experiência desenvolvendo e mantendo sites de todo porte. Desde um cartão de visita interativo até uma plataforma comercial de venda reversa em next/pgsql por meio da criação de orçamentos gratuitos. Clique na imagem abaixo para ver a demo pública!</p>
+
+            <a href="https://plat.newcortex.site/" target="_blank">
+                <img class="imagem-github" src="./img/plat.png" alt="Tela do meu site de orçamentos">
+            </a>
+            <p><a href="#topo">Vamos voltar ao topo?</a></p>
+        </section>
+    </main>
+</body>
+</html>

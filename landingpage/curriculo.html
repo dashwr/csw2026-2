@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>currículo | minha landing page</title>
+    <style>
+        * { box-sizing: border-box; }
+
+        body { margin: 0; font-family: Arial, sans-serif; color: #30213d; background: #faf8fc; }
+
+        .cabecalho { display: flex; align-items: center; justify-content: space-between; gap: 24px; min-height: 120px; margin: 18px 24px 0; padding: 28px 8%; color: white; background: #4b2673; border-radius: 32px; box-shadow: 0 8px 20px #4b267333; }
+        .cabecalho h1 { margin: 0; font-size: 1.25rem; }
+
+        nav { display: flex; flex-wrap: wrap; gap: 20px; }
+        nav a { color: white; text-decoration: none; }
+        nav a:hover { color: #e2c8ff; text-decoration: underline; }
+
+        main { max-width: 900px; margin: 48px auto; padding: 0 24px; }
+
+        h2, h3 { color: #4b2673; }
+
+        /*cards horizontais*/
+        .cartao { margin: 18px 0; padding: 22px; background: white; border: 1px solid #dfd0ed; border-radius: 14px; box-shadow: #4b2673 10px 10px 20px;}
+
+        /* textinho de subtitulo */
+        .dica { color: #65428a; }
+
+        @media (max-width: 600px) { .cabecalho { flex-direction: column; text-align: center; } nav { justify-content: center; } }
+
+    </style>
+</head>
+<body>
+    <header class="cabecalho">
+        <h1>Pág. do Bruno</h1>
+        <nav aria-label="menu principal">
+            <a href="index.html">home</a>
+            <a href="curriculo.html">currículo</a>
+            <a href="github.html">github</a>
+            <a href="servicos.html">serviços</a>
+        </nav>
+    </header>
+    <main>
+        <h2>> currículo</h2>
+        <p class="dica">Mais sobre mim.</p>
+        <section class="cartao">
+            <h3>> objetivo</h3>
+            <p>Aprofundamento acadêmico, crescimento intelectual e experiências novas.</p>
+        </section>
+        <section class="cartao">
+            <h3>> formação acadêmica</h3>
+            <p><strong>Ciência da Computação</strong> - Universidade Vila Velha, 2026 a 2031.</p>
+            <p><strong>C2 Proficient in English</strong> - EF SET, Education First's Standard English Test, 2025</p>
+        </section>
+        <section class="cartao">
+            <h3>> experiência profissional</h3>
+            <p><strong>Representante de Telecomunicação</strong> - Invertus, estagiário, 2024 a 2025.</p>
+            <p><strong>Analista de Suporte</strong> - Invertus, estagiário, 2025 a 2026.</p>
+            <p><strong>Desenvolvimento e Inovação</strong> - New Cortex, liberal, 2026 a presente.</p>
+        </section>
+        <section class="cartao">
+            <h3>> habilidades</h3>
+            <ul>
+                <li>Fluente em inglês como segunda língua;</li>
+                <li>HTML básico, CSS básico;</li>
+                <li>Uso eficiente de ferramentas agênticas <i>(Claude Code, Codex, OpenCode, Zed, MCode...)</i>;</li>
+                <li>Experiência com software de edição <i>(Premiere Pro, Photoshop, GIMP, Paint.NET, Sony Vegas...)</i>;</li>
+                <li>Autodidata e entusiasta em manutenção de máquinas e hardware em geral;</li>
+                <li>Convívio longo com tecnologia:
+                    <ul>
+                        <li>Entendimento rápido de sistemas;</li>
+                        <li>Proficiência e experiência com Linux <i>(Arch, Fedora, Ubuntu...)</i>, Android 4.0, 5.0, 9, 10+, e Windows <i>(7, 8.1, 10, 11)</i>;</li>
+                        <li>Conhecimento sobre diversas soluções e ferramentas digitais <i>(Microsoft Office, Google Workspace, Adobe Creative Cloud, Figma, VSCode...)</i>.</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <section class="cartao">
+            <h3>> conclusão</h3>
+            <p>Se interessou em bater um papo comigo? <a href="./contato.html">Clica aqui!</a></p>
+            <p>Caso queira explorar um pouco mais, <a href="./github.html">clique aqui</a> para ver meus projetos mais recentes! Ou, <a href="./servicos.html">clique aqui</a> para podermos ver juntos como ficaria o seu!</p>
+            <p><a href="#topo">Vamos voltar ao topo?</a></p>
+        </section>
+    </main>
+</body>
+</html>
