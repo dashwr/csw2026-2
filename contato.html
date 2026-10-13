@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contato | minha landing page</title>
+    <style>
+        * { box-sizing: border-box; }
+
+        body { margin: 0; font-family: Arial, sans-serif; color: #30213d; background: #faf8fc; }
+
+        .cabecalho { display: flex; align-items: center; justify-content: space-between; gap: 24px; min-height: 120px; margin: 18px 24px 0; padding: 28px 8%; color: white; background: #4b2673; border-radius: 32px; box-shadow: 0 8px 20px #4b267333; }
+        .cabecalho h1 { margin: 0; font-size: 1.25rem; }
+
+        nav { display: flex; flex-wrap: wrap; gap: 20px; }
+        nav a { color: white; text-decoration: none; }
+        nav a:hover { color: #e2c8ff; text-decoration: underline; }
+
+        main { max-width: 900px; margin: 48px auto; padding: 0 24px; }
+
+        h2, h3 { color: #4b2673; }
+
+        .dica { color: #65428a; }
+
+        .formulario { display: grid; gap: 18px; }
+
+        .cartao { margin: 0; padding: 22px; background: white; border: 1px solid #dfd0ed; border-radius: 14px; box-shadow: #4b2673 5px 5px 5px}
+
+        legend { padding: 0 8px; color: #4b2673; font-weight: bold; }
+
+        .campo { display: block; margin-bottom: 14px; }
+        .campo span { display: block; margin-bottom: 6px; }
+
+        input[type="text"], input[type="tel"], input[type="email"], select, textarea {
+            width: 100%;
+            padding: 10px 12px;
+            font: inherit;
+            color: #30213d;
+            background: #faf8fc;
+            border: 1px solid #dfd0ed;
+            border-radius: 8px;
+        }
+
+        textarea { min-height: 120px; resize: vertical; }
+
+        input:focus, select:focus, textarea:focus { outline: 2px solid #9065b5; border-color: #9065b5; }
+
+        .opcoes { display: flex; flex-wrap: wrap; gap: 18px; margin-bottom: 14px; }
+
+        .botao { display: inline-block; padding: 12px 18px; color: white; background: #6b3f91; border: none; border-radius: 10px; font: inherit; cursor: pointer; }
+        .botao:hover { background: #4b2673; }
+
+        @media (max-width: 600px) { .cabecalho { flex-direction: column; text-align: center; } nav { justify-content: center; } }
+    </style>
+</head>
+<body>
+    <header class="cabecalho">
+        <h1>Pág. do Bruno</h1>
+        <nav aria-label="menu principal">
+            <a href="index.html">home</a>
+            <a href="curriculo.html">currículo</a>
+            <a href="github.html">github</a>
+            <a href="servicos.html">serviços</a>
+        </nav>
+    </header>
+    <main>
+        <h2>> contato</h2>
+        <p class="dica">Preencha o formulário, e eu logo entro em contato!</p>
+
+        <form class="formulario" action="#" method="post">
+
+            <fieldset class="cartao">
+                <legend>dados pessoais</legend>
+
+                <label class="campo">
+                    <span>nome completo</span>
+                    <input type="text" name="nome" required autocomplete="name">
+                </label>
+
+                <label class="campo">
+                    <span>telefone</span>
+                    <input type="tel" name="telefone" placeholder="(27) 99999-9999" required autocomplete="tel">
+                </label>
+
+                <label class="campo">
+                    <span>e-mail</span>
+                    <input type="email" name="email" required autocomplete="email">
+                </label>
+
+                <fieldset class="campo">
+                    <legend>pessoa física ou jurídica?</legend>
+                    <div class="opcoes">
+                        <label><input type="radio" name="tipo-pessoa" value="fisica" required> pessoa física</label>
+                        <label><input type="radio" name="tipo-pessoa" value="juridica"> pessoa jurídica</label>
+                    </div>
+                </fieldset>
+            </fieldset>
+
+            <fieldset class="cartao">
+                <legend>sobre o projeto</legend>
+
+                <label class="campo">
+                    <span>melhor horário para contato</span>
+                    <select name="horario" required>
+                        <option value="">- escolha -</option>
+                        <option value="manha">manhã (8h às 12h)</option>
+                        <option value="tarde">tarde (13h às 18h)</option>
+                        <option value="noite">noite (18h às 21h)</option>
+                        <option value="qualquer">qualquer horário</option>
+                    </select>
+                </label>
+
+                <label class="campo">
+                    <span>tipo de serviço</span>
+                    <select name="servico" required>
+                        <option value="">- escolha -</option>
+                        <option value="estatico-1-2">site estático, 1 a 2 páginas</option>
+                        <option value="estatico-3-5">site estático, 3 a 5 páginas</option>
+                        <option value="estatico-5">site estático, mais de 5 páginas</option>
+                        <option value="dinamico">site dinâmico</option>
+                        <option value="avancado">projeto avançado</option>
+                        <option value="nao-sei">ainda não sei</option>
+                    </select>
+                </label>
+
+                <label class="campo">
+                    <span>breve descrição do que deseja contratar</span>
+                    <textarea name="descricao" required></textarea>
+                </label>
+
+                <label>
+                    <input type="checkbox" name="proposta-email" value="sim">
+                    quero receber a proposta também por e-mail
+                </label>
+            </fieldset>
+
+            <div>
+                <button type="submit" class="botao">enviar</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

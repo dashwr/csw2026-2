@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>serviços | minha landing page</title>
+    <style>
+        * { box-sizing: border-box; }
+
+        body { margin: 0; font-family: Arial, sans-serif; color: #30213d; background: #faf8fc; }
+
+        .cabecalho { display: flex; align-items: center; justify-content: space-between; gap: 24px; min-height: 120px; margin: 18px 24px 0; padding: 28px 8%; color: white; background: #4b2673; border-radius: 32px; box-shadow: 0 8px 20px #4b267333; }
+        .cabecalho h1 { margin: 0; font-size: 1.25rem; }
+
+        nav { display: flex; flex-wrap: wrap; gap: 20px; }
+        nav a { color: white; text-decoration: none; }
+        nav a:hover { color: #e2c8ff; text-decoration: underline; }
+
+        main { max-width: 1000px; margin: 48px auto; padding: 0 24px; }
+
+        h2, h3 { color: #4b2673; }
+
+        .tabela { width: 100%; border-collapse: collapse; background: white; border-radius: 12px; overflow: hidden; box-shadow: #4b2673 10px 10px 50px}
+        .tabela th, .tabela td { padding: 14px; border: 1px solid #dfd0ed; text-align: left; }
+        .tabela th { color: white; background: #6b3f91; }
+
+        .nota { padding: 18px; margin-top: 20px; background: #eee5f7; border-radius: 12px; box-shadow: #4b2673 10px 10px 50px}
+
+        .botao { display: inline-block; padding: 12px 18px; color: white; background: #6b3f91; border-radius: 10px; text-decoration: none; }
+        .botao:hover { background: #4b2673; }
+
+        @media (max-width: 600px) { .cabecalho { flex-direction: column; text-align: center; } nav { justify-content: center; } .tabela th, .tabela td { padding: 9px; font-size: .9rem; } }
+    </style>
+</head>
+<body>
+
+    <header class="cabecalho" id="topo">
+        <h1>Pág. do Bruno</h1>
+        <nav aria-label="menu principal">
+            <a href="index.html">home</a>
+            <a href="curriculo.html">currículo</a>
+            <a href="github.html">github</a>
+            <a href="servicos.html">serviços</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>serviços de criação de sites</h2>
+
+        <p>Minha precificação e o que esperar de cada serviço.</p>
+
+        <table class="tabela">
+            <thead>
+                <tr><th>tipo de site</th><th>descrição</th><th>valor</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>estático (1 a 2 páginas)</td><td>Páginas informativas com links e afins.</td><td>R$ 89,90</td></tr>
+                <tr><td>estático (3 a 5 páginas)</td><td>Mais páginas, para um site completo.</td><td>R$ 109,90</td></tr>
+                <tr><td>estático (mais de 5 páginas)</td><td>Responsividade e estrutura maior.</td><td>R$ 149,90 + R$ 19,90/pág adicional</td></tr>
+                <tr><td>dinâmico</td><td>Para cativar seus leads e transformá-los em clientes.</td><td>R$ 199,90 + R$ 29,90/pág estática</td></tr>
+                <tr><td>avançado</td><td>Sua ideia, seu sistema, tudo pode se tornar realidade.</td><td>A partir de R$ 399,90</td></tr>
+            </tbody>
+        </table>
+
+        <table class="tabela">
+            <thead>
+                <tr><th>tipo de empresa</th><th>exemplo de como poderia ser seu site</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>empresário autônomo</td><td>Cartão de visitas interativo com exemplos dos seus trabalhos.</td></tr>
+                <tr><td>criador de conteúdo</td><td>Agregador de todos seus links, e artigos sobre seus conteúdos.</td></tr>
+                <tr><td>arquitetos</td><td>Calculadora interativa de preço de projeto.</td></tr>
+                <tr><td>corretores</td><td>Comparador entre planos, calculadora de consórcio...</td></tr>
+            </tbody>
+        </table>
+
+        <section class="nota">
+
+            <h3>> promocional</h3>
+            <p>Por um adicional de R$ 24,99 mensais recorrentes, posso também hospedar seu site com minha hospedagem parceira, oferecendo uma experiência totalmente zero-esforço e manutenção inclusa.</p>
+
+            <h3>> vamos conversar sobre seu projeto?</h3>
+            <p>Seu site não fica preso a uma descrição genérica. Fale comigo e podemos medir e precificar juntos, vendo sua ideia sair do papel.</p>
+
+            <a class="botao" href="./contato.html">Entrar em Contato</a>
+
+            <p><a href="#topo">Vamos voltar ao topo?</a></p>
+        </section>
+    </main>
+</body>
+</html>
