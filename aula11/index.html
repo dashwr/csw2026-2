@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Aula 11</title>
+    <style>
+        
+        body {
+             background-color: #ece6e6;
+            text-align: center;
+        }
+
+        a {
+            color: blue;
+        }
+        a:hover {
+            color: white;
+        }
+        a:active {
+            color: green;
+        }
+
+        a::before {
+            content: '> ';
+        }
+        a::after {
+            content: ' <';
+        }
+
+        .div {
+            display: inline-block;
+            vertical-align: top;
+            width: 250px;
+            padding: 15px;
+            margin: 10px;
+            border: 2px solid black;
+        }
+
+        #divspotify {
+            background-color: lightgreen;
+        }
+        #divyoutube {
+            background-color: rgb(255, 25, 0);
+        }
+        #divamazon {
+            background-color: rgb(0, 230, 230);
+        }
+
+        .logo {
+            width: 100px;
+            height: 100px;
+        }
+
+        #exemplo-hover {
+            background-color: white;
+            padding: 10px;
+        }
+
+        #exemplo-hover:hover {
+            background-color: lightblue;
+        }
+
+        #exemplo-letra::first-letter {
+            color: red;
+            font-size: 30px;
+        }
+
+        #secreto {
+            background-color: white;
+            color: white;
+            padding: 10px;
+        }
+
+        #secreto:hover {
+            background-color: lightblue;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Links de música</h1>
+
+    <div id="divspotify" class="div">
+        <h2>Spotify</h2>
+        <img class="logo" src="img/spotify.png" alt="Logo do Spotify">
+        <p><a href="https://open.spotify.com" target="_blank">♬ Spotify</a></p>
+    </div>
+
+    <div id="divyoutube" class="div">
+        <h2>YouTube</h2>
+        <img class="logo" src="img/youtube.png" alt="Logo do YouTube">
+        <p><a href="https://www.youtube.com" target="_blank">♬ YouTube</a></p>
+    </div>
+
+    <div id="divamazon" class="div">
+        <h2>Amazon Music</h2>
+        <img class="logo" src="img/amazon-music.png" alt="Logo do Amazon Music">
+        <p><a href="https://music.amazon.com" target="_blank">♬ Amazon Music</a></p>
+    </div>
+
+    <div class="div-2">
+        <h2>Segunda Div &mdash; Navegação e Informações</h2>
+        <p class="descricao">
+            Esta segunda divisão demonstra a separação clara dos blocos e contém o link de navegação para retornar à página inicial:
+        </p>
+
+        <div class="links-container">
+            <a href="fontes.html">♬ Ir para o Exercício de Fontes</a>
+        </div>
+
+       
+    </div>
+
+    <h2>Exemplos de div com id e pseudo-elementos</h2>
+
+    <div id="exemplo-hover">
+        Passe o mouse aqui para trocar a cor do fundo.
+    </div>
+
+    <p id="exemplo-letra">Esta frase começa com uma letra maior e vermelha.</p>
+
+    <p><a href="index.html">Clique para recarregar esta página.</a></p>
+
+    <div id="secreto">Este é o texto secreto.</div>
+
+    <p><a href="fontes.html">Ver exercício de fontes</a></p>
+</body>
+</html>
