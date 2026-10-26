@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 16</title>
+    <style>
+body{
+    background-image: radial-gradient(rgb(124, 151, 187) 1px, transparent 1px);
+    background-size: 24px 24px;
+    background-color: rgb(188, 201, 214);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    background-color: rgb(219, 226, 233);
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0px 2px 6px rgb(128, 123, 167);
+}
+.logo{
+    background-color: rgb(128, 123, 167);
+    border-radius: 10px;
+    width: 50px; height: 50px;
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+nav a, aside a{
+    background-color: rgb(128, 123, 167);
+    color: rgb(222, 227, 239);
+    padding: 8px 12px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.main{
+    display: flex;
+    flex: 1;
+    min-height: 0;
+}
+aside{
+    background-color: rgb(206, 199, 212);
+    width: 180px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+    box-shadow: 1px 0px 5px rgb(128, 123, 167);
+}
+.content{
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 15px;
+    padding: 15px;
+    overflow: auto;
+}
+.item{
+    background-color: rgb(219, 226, 233);
+    border-radius: 15px;
+    box-shadow: 3px 3px 5px rgb(128, 123, 167);
+    flex: 1 1 200px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.item:hover{
+    box-shadow: 4px 4px 10px rgb(128, 123, 167);
+}
+footer{
+    background-color: rgb(219, 226, 233);
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0px -2px 6px rgb(128, 123, 167);
+}
+@media (max-width: 700px){
+    header{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .main{
+        flex-direction: column;
+    }
+    aside{
+        width: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .item{
+        flex: 1 1 100%;
+    }
+}
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo"></div>
+    <nav>
+        <a href="#">Início</a>
+        <a href="#">Galeria</a>
+        <a href="#">Contato</a>
+    </nav>
+</header>
+
+<div class="main">
+    <aside>
+        <a href="#">Item 1</a>
+        <a href="#">Item 2</a>
+        <a href="#">Item 3</a>
+        <a href="#">Item 4</a>
+    </aside>
+
+    <div class="content">
+        <div class="item">Card 1</div>
+        <div class="item">Card 2</div>
+        <div class="item">Card 3</div>
+        <div class="item">Card 4</div>
+        <div class="item">Card 5</div>
+        <div class="item">Card 6</div>
+    </div>
+</div>
+
+<footer>Rodapé</footer>
+
+</body>
+</html>
